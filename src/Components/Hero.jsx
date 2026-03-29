@@ -5,8 +5,8 @@ import circle from "../assets/circle.png";
 const Hero = () => {
   return (
     <>
-      <div className="main-container max-w-300 mx-auto flex items-center flex-col p-3 sm:justify-between sm:flex-row">
-        <div className="left-contianer ">
+      <div className="main-container max-w-300 mx-auto flex mt-6 items-center flex-col gap-3 p-3 md:justify-between md:flex-row md:mt-15">
+        <div className="left-contianer space-y-4 ">
           <span className="flex items-center gap-1 px-4 py-3 bg-[#E1E7FF] rounded-full w-fit">
             <img src={circle} alt="" />
             <span className="text-[#9514FA]">
@@ -17,14 +17,14 @@ const Hero = () => {
             Supercharge Your <br />
             Digital Workflow
           </h1>
-          <p>
+          <p className="text-[#627382]">
             Access premium AI tools, design assets, templates, and productivity <br />
             software—all in one place. Start creating faster today. <br /> Explore
             Products
           </p>
-          <div className="hero-button">
-            <button className="btn btn-accent">Explore Products</button>
-            <button className="btn btn-outline">Watch Demo</button>
+          <div className="hero-button flex flex-col  gap-3 sm:flex-row">
+            <button className="btn btn-accent rounded-full">Explore Products</button>
+            <button className="btn btn-outline rounded-full">Watch Demo</button>
 
           </div>
         </div>
