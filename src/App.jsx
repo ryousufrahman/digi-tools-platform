@@ -3,6 +3,7 @@ import './App.css'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import ProductButton from './Components/Product/ProductButton'
+import Started from './Components/Started'
 import UsersCount from './Components/UsersCount'
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
       <section className='product-button-section mt-5 lg:mt-20'>
         <ProductButton></ProductButton>
       
+      </section>
+      <section className='getStarted-section mt-5 bg-[#F9FAFC] py-8 md:mt-15 lg:py-15'>
+      <Started></Started>
       </section>
     </main>
     
