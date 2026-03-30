@@ -4,6 +4,7 @@ import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import ProductButton from './Components/Product/ProductButton'
 import Started from './Components/Started'
+import Subscription from './Components/Subscription'
 import UsersCount from './Components/UsersCount'
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
       </section>
       <section className='getStarted-section mt-5 bg-[#F9FAFC] py-8 md:mt-15 lg:py-15 '>
       <Started></Started>
+      </section>
+      <section>
+        <Subscription></Subscription>
       </section>
     </main>
     
