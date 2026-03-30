@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="navbar-end ">
           <img src={Cart} alt="" className="pr-4" />
            <a href="" className="mx-4 hidden md:block">Login</a>
-          <a className="btn rounded-full  hidden md:flex ">Get Started</a>
+          <a className="btn rounded-full bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white  hidden md:flex ">Get Started</a>
           
         </div>
       </div>

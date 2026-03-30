@@ -23,8 +23,8 @@ const Hero = () => {
             Products
           </p>
           <div className="hero-button flex flex-col  gap-3 sm:flex-row">
-            <button className="btn btn-accent rounded-full">Explore Products</button>
-            <button className="btn btn-outline rounded-full">Watch Demo</button>
+            <button className="btn bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white rounded-full">Explore Products</button>
+            <button className="btn bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white  rounded-full">Watch Demo</button>
 
           </div>
         </div>

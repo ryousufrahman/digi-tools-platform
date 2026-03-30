@@ -16,14 +16,14 @@ function App() {
     </header>
     <main>
       <Hero></Hero>
-      <section className='bg-amber-400 mt-15  py-5 md:py-15'>
+      <section className='bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] mt-15  py-5 md:py-15'>
         <UsersCount></UsersCount>
       </section>
       <section className='product-button-section mt-5 lg:mt-20'>
         <ProductButton></ProductButton>
       
       </section>
-      <section className='getStarted-section mt-5 bg-[#F9FAFC] py-8 md:mt-15 lg:py-15'>
+      <section className='getStarted-section mt-5 bg-[#F9FAFC] py-8 md:mt-15 lg:py-15 '>
       <Started></Started>
       </section>
     </main>
