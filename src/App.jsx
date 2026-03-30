@@ -1,4 +1,5 @@
 
+import { useState } from 'react'
 import './App.css'
 import Footer from './Components/Footer'
 import Hero from './Components/Hero'
@@ -10,6 +11,7 @@ import Transform from './Components/Transform'
 import UsersCount from './Components/UsersCount'
 
 function App() {
+  const [toggle , setToggle] =useState('products')
   
 
   return (
@@ -23,7 +25,7 @@ function App() {
         <UsersCount></UsersCount>
       </section>
       <section className='product-button-section mt-5 lg:mt-20'>
-        <ProductButton></ProductButton>
+        <ProductButton toggle ={toggle} setToggle={setToggle}></ProductButton>
       
       </section>
       <section className='getStarted-section mt-5 bg-[#F9FAFC] py-8 md:mt-15 lg:py-15 '>
