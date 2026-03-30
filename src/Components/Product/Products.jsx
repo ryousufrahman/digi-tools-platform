@@ -6,7 +6,15 @@ const Products = ({product ,addToCart , setAddToCart}) => {
    const [buy , setBuy] =useState(false)
    const handlebuy =()=>{
      setBuy(true);
-     setAddToCart([...addToCart,product])
+
+      const exist = addToCart.find(p=> p.id === product.id)
+      if(exist){
+        alert('already')
+      }
+      else{
+         setAddToCart([...addToCart,product])
+      }
+     
      console.log(addToCart);
      
    }
