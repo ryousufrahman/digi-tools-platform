@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar'
 import ProductButton from './Components/Product/ProductButton'
 import Started from './Components/Started'
 import Subscription from './Components/Subscription'
+import Transform from './Components/Transform'
 import UsersCount from './Components/UsersCount'
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
       </section>
       <section>
         <Subscription></Subscription>
+      </section>
+      <section className='bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)]   py-5 md:py-15'>
+        <Transform></Transform>
+
       </section>
     </main>
     
