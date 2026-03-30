@@ -1,5 +1,6 @@
 
 import './App.css'
+import Footer from './Components/Footer'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import ProductButton from './Components/Product/ProductButton'
@@ -36,6 +37,11 @@ function App() {
 
       </section>
     </main>
+    <footer className='bg-[#101727] py-15 '>
+       <Footer></Footer>
+
+
+    </footer>
     
       
     </>
