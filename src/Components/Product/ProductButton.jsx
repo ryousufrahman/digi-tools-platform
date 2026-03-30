@@ -2,9 +2,10 @@ import React, { use } from "react";
 import Products from "./Products";
 import Cart from "./Cart";
 
-const ProductButton = ({toggle , setToggle , fetchPromise , addToCart , setAddToCart}) => {
+const ProductButton = ({toggle , setToggle , fetchPromise ,addToCart , setAddToCart }) => {
   const allProduct = use(fetchPromise);
   console.log(allProduct);
+ 
   
   return (
     <>

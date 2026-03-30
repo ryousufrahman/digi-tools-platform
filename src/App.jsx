@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Footer from './Components/Footer'
 import Hero from './Components/Hero'
@@ -20,7 +20,8 @@ console.log(fetchPromise);
 
 function App() {
   const [toggle , setToggle] =useState('products');
-  const [addToCart , setAddToCart]=useState([])
+   const [addToCart , setAddToCart]=useState([])
+  
   
 
   return (
@@ -34,7 +35,10 @@ function App() {
         <UsersCount></UsersCount>
       </section>
       <section className='product-button-section mt-5 lg:mt-20'>
-        <ProductButton toggle ={toggle} setToggle={setToggle} fetchPromise={fetchPromise} addToCart={addToCart} setAddToCart={setAddToCart}></ProductButton>
+        <Suspense>
+
+          <ProductButton toggle ={toggle} setToggle={setToggle} fetchPromise={fetchPromise} addToCart={addToCart} setAddToCart={setAddToCart} ></ProductButton>
+        </Suspense>
       
       </section>
       <section className='getStarted-section mt-5 bg-[#F9FAFC] py-8 md:mt-15 lg:py-15 '>

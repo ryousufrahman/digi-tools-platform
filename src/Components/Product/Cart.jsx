@@ -1,9 +1,13 @@
 import React from 'react';
+import EmptyCart from './EmptyCart';
+import RenderCartProduct from './RenderCartProduct';
 
 const Cart = ({addToCart , setAddToCart}) => {
     return (
         <>
-           
+         <div className='main-container'>
+
+               
          <div >
             <h3 className='text-2xl font-bold'>Your Cart</h3>
 
@@ -11,8 +15,15 @@ const Cart = ({addToCart , setAddToCart}) => {
 
          <div>
              {
-                
+               addToCart.length == 0 ? <EmptyCart></EmptyCart> : null
              }
+         </div>
+          <div>
+            {
+                addToCart.length>0 ? <RenderCartProduct addToCart={addToCart} setAddToCart={setAddToCart}></RenderCartProduct> : null
+            }
+          </div>
+
          </div>
         </>
     );
