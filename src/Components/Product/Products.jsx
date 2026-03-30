@@ -4,11 +4,9 @@ import Options from './Options';
 
 const Products = ({product ,addToCart , setAddToCart}) => {
    const [buy , setBuy] =useState(false)
-   const handlebuy =()=>{
+   const handlebuy =({product})=>{
      setBuy(true);
-     
-
-
+     setAddToCart([...addToCart ,product])
    }
 
      
@@ -37,7 +35,7 @@ const Products = ({product ,addToCart , setAddToCart}) => {
 
             </div>
              <div>
-              <button className={`btn w-full rounded-full text-white ${buy? 'bg-green-500 ': 'bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)]' } `} onClick={handlebuy}>{buy? 'Added to Cart' : 'Buy Now'}</button>
+              <button className={`btn w-full rounded-full text-white ${buy? 'bg-green-500 ': 'bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)]' } `} onClick={()=>handlebuy(product)}>{buy? 'Added to Cart' : 'Buy Now'}</button>
              </div>
 
 
