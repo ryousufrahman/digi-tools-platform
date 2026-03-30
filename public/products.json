@@ -12,7 +12,7 @@
       "AI content suggestions",
       "ATS optimization"
     ],
-    "icon": ""
+    "icon": "https://i.ibb.co.com/cSpjbVBk/resume.png"
   },
   {
     "id": 2,
@@ -28,7 +28,7 @@
       "Multiple tone options",
       "Plagiarism checker"
     ],
-    "icon": ""
+    "icon": "https://i.ibb.co.com/chgwhJHd/writing.png"
   },
   {
     "id": 3,
@@ -43,7 +43,7 @@
       "Multiple art styles",
       "Prompt enhancement"
     ],
-    "icon": ""
+    "icon": "https://i.ibb.co.com/vCZxpNSy/photo.png"
   },
   {
     "id": 4,
@@ -58,7 +58,7 @@
       "Bug detection",
       "Multi-language support"
     ],
-    "icon": ""
+    "icon": "https://i.ibb.co.com/C58gmPYS/code.png"
   },
   {
     "id": 5,
@@ -73,7 +73,7 @@
       "Beautiful templates",
       "Auto layout design"
     ],
-    "icon": ""
+    "icon": "https://i.ibb.co.com/Y7JSqW7m/presentation.png"
   },
   {
     "id": 6,
@@ -88,6 +88,6 @@
       "Audience targeting",
       "Campaign analytics"
     ],
-    "icon": ""
+    "icon": "https://i.ibb.co.com/rG5TwW2z/media.png"
   }
 ]

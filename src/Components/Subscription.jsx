@@ -12,7 +12,7 @@ const Subscription = () => {
           </p>
         </div>
 
-        <div className="all-subscription grid gap-5 mt-5 sm:mt-12 sm:grid-cols-3">
+        <div className="all-subscription grid gap-5 mt-5 sm:mt-12 sm:grid-cols-2 md:grid-cols-3">
           <div className="box1 bg-[#62738200] py-6 px-6 rounded-2xl shadow space-y-4 flex flex-col">
             <div className="header space-y-4 flex-1">
               <h4 className="font-bold text-2xl">Starter</h4>

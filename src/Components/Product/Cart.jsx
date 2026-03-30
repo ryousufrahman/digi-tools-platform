@@ -1,10 +1,19 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = ({addToCart , setAddToCart}) => {
     return (
         <>
            
-        <h2>cart</h2>
+         <div >
+            <h3 className='text-2xl font-bold'>Your Cart</h3>
+
+         </div>
+
+         <div>
+             {
+                
+             }
+         </div>
         </>
     );
 };

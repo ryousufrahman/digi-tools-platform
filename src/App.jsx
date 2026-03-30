@@ -10,14 +10,23 @@ import Subscription from './Components/Subscription'
 import Transform from './Components/Transform'
 import UsersCount from './Components/UsersCount'
 
+const fetchProduct =async ()=>{
+  const res = await fetch('/products.json')
+  return res.json()
+}
+const fetchPromise = fetchProduct()
+console.log(fetchPromise);
+
+
 function App() {
-  const [toggle , setToggle] =useState('products')
+  const [toggle , setToggle] =useState('products');
+  const [addToCart , setAddToCart]=useState([])
   
 
   return (
     <> 
-    <header className='shadow-sm sticky z-40 top-0 w-full' >
-       <Navbar></Navbar>
+    <header className='shadow-sm sticky z-40 top-0 w-full bg-base-100' >
+       <Navbar addToCart={addToCart}></Navbar>
     </header>
     <main>
       <Hero></Hero>
@@ -25,7 +34,7 @@ function App() {
         <UsersCount></UsersCount>
       </section>
       <section className='product-button-section mt-5 lg:mt-20'>
-        <ProductButton toggle ={toggle} setToggle={setToggle}></ProductButton>
+        <ProductButton toggle ={toggle} setToggle={setToggle} fetchPromise={fetchPromise} addToCart={addToCart} setAddToCart={setAddToCart}></ProductButton>
       
       </section>
       <section className='getStarted-section mt-5 bg-[#F9FAFC] py-8 md:mt-15 lg:py-15 '>
