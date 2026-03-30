@@ -1,6 +1,7 @@
 import React from "react";
 import heroImg from "../assets/banner.png";
 import circle from "../assets/circle.png";
+import play from '../assets/Play.png'
 
 const Hero = () => {
   return (
@@ -24,7 +25,8 @@ const Hero = () => {
           </p>
           <div className="hero-button flex flex-col  gap-3 sm:flex-row">
             <button className="btn bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white rounded-full">Explore Products</button>
-            <button className="btn bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white  rounded-full">Watch Demo</button>
+            <button className="btn btn-outline  text-purple-500 border-2 border-purple-400  rounded-full">
+              <img src={play} alt="" />Watch Demo</button>
 
           </div>
         </div>
