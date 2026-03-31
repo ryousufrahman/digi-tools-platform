@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Options from './Options';
+import { toast } from 'react-toastify';
 
 
 const Products = ({product ,addToCart , setAddToCart}) => {
@@ -9,9 +10,10 @@ const Products = ({product ,addToCart , setAddToCart}) => {
 
       const exist = addToCart.find(p=> p.id === product.id)
       if(exist){
-        alert('already')
+        toast.warn( 'This Product Already Exist in the Cart')
       }
       else{
+        toast.success(`${product.name} Added to the Cart`)
          setAddToCart([...addToCart,product])
       }
      

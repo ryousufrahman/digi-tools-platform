@@ -9,6 +9,7 @@ import Started from './Components/Started'
 import Subscription from './Components/Subscription'
 import Transform from './Components/Transform'
 import UsersCount from './Components/UsersCount'
+import { ToastContainer } from 'react-toastify'
 
 const fetchProduct =async ()=>{
   const res = await fetch('/products.json')
@@ -58,7 +59,7 @@ function App() {
 
     </footer>
     
-      
+      <ToastContainer />
     </>
   )
 }
