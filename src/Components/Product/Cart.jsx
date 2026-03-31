@@ -18,7 +18,7 @@ const Cart = ({addToCart , setAddToCart}) => {
                addToCart.length == 0 ? <EmptyCart></EmptyCart> : null
              }
          </div>
-          <div>
+          <div className='mt-5'>
             {
                 addToCart.length>0 ? <RenderCartProduct addToCart={addToCart} setAddToCart={setAddToCart}></RenderCartProduct> : null
             }
