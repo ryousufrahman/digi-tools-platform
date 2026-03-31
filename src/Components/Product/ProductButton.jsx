@@ -20,9 +20,9 @@ const ProductButton = ({toggle , setToggle , fetchPromise ,addToCart , setAddToC
                to boost your productivity and creativity.
              </p>
           </div>
-          <div className="flex justify-center gap-2 mt-6 ">
-              <button className={`btn rounded-full ${toggle =='products' ? 'bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white' :'btn'}`} onClick={()=>setToggle('products')}>Products</button>
-               <button  className={`btn rounded-full ${toggle =='cart' ? 'bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white' :'btn'}`}  onClick={()=>setToggle('cart')}>Cart ({addToCart.length})</button>
+          <div className="flex justify-center  mt-6 ">
+              <button className={`btn rounded-r-none rounded-l-full  ${toggle =='products' ? 'bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white' :'btn'}`} onClick={()=>setToggle('products')}>Products</button>
+               <button  className={`btn  rounded-r-full rounded-l-none ${toggle =='cart' ? 'bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white' :'btn'}`}  onClick={()=>setToggle('cart')}>Cart ({addToCart.length})</button>
             </div>
 
 
