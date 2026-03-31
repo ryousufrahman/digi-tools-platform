@@ -60,12 +60,12 @@ const Subscription = () => {
               <div className="box2 bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white  py-6 px-6 rounded-2xl shadow space-y-4 relative">
                 <span className="text-red-500 px-4 py-2 absolute -top-5 right-10  rounded-full bg-amber-200">Most Popular</span>
             <div className="header space-y-4 ">
-              <h4 className="font-bold text-2xl">Enterprise</h4>
-              <p className="text-white">For teams and businesses</p>
+              <h4 className="font-bold text-2xl">Pro</h4>
+              <p className="text-white">Best for professionals</p>
             </div>
             <div>
               <h2 className="text-4xl font-bold">
-                $99
+                $29
                 <span className="text-2xl font-normal text-white">
                   /month
                 </span>
@@ -75,33 +75,33 @@ const Subscription = () => {
               <ul>
                 <li className="flex gap-1 items-center text-white">
                   {" "}
-                  <Check className="text-green-500"></Check>Everything in Pro
+                  <Check className="text-white"></Check>Access to all premium tools
                 </li>
                 <li className="flex gap-1 items-center text-white">
                   {" "}
-                  <Check className="text-green-500"></Check>Team collaboration
+                  <Check className="text-white"></Check>Unlimited templates
                 </li>
                 <li className="flex gap-1 items-center text-white">
                   {" "}
-                  <Check className="text-green-500"></Check>Custom integrations
+                  <Check className="text-white"></Check>Priority support
                 </li>
                 <li className="flex gap-1 items-center text-white">
                   {" "}
-                  <Check className="text-green-500"></Check>Dedicated support
+                  <Check className="text-white"></Check>Dedicated support
                 </li>
                 <li className="flex gap-1 items-center text-white">
                   {" "}
-                  <Check className="text-green-500"></Check>SLA guarantee
+                  <Check className="text-white"></Check>SLA guarantee
                 </li>
                 <li className="flex gap-1 items-center text-white">
                   {" "}
-                  <Check className="text-green-500"></Check>Custom branding
+                  <Check className="text-white"></Check>Custom branding
                 </li>
               </ul>
             </div>
             <div>
               <button className="btn w-full mt-5  rounded-full bg-white text-purple-500 ">
-                Contact Sales
+                Start Pro Trial
               </button>
             </div>
           </div>
