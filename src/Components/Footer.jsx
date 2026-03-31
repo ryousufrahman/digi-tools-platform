@@ -48,7 +48,7 @@ const Footer = () => {
 </footer>
   <hr className='border bg-white text-gray-400 max-w-300 mx-auto' />
 
-  <div className=' max-w-300 mx-auto text-gray-300 flex  justify-between mt-5 p-4'>
+  <div className=' max-w-300 mx-auto text-gray-300 flex  justify-between mt-5 p-4 gap-3 flex-col sm:flex-row '>
     <p>© 2026 Digitools. All rights reserved.</p>
   
     <ul className='flex flex-col sm:gap-5 sm:flex-row '>
