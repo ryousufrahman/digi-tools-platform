@@ -2,7 +2,7 @@ import React from 'react';
 import EmptyCart from './EmptyCart';
 import RenderCartProduct from './RenderCartProduct';
 
-const Cart = ({addToCart , setAddToCart}) => {
+const Cart = ({addToCart , setAddToCart ,setToggle}) => {
     return (
         <>
          <div className='main-container'>
@@ -15,7 +15,7 @@ const Cart = ({addToCart , setAddToCart}) => {
 
          <div>
              {
-               addToCart.length == 0 ? <EmptyCart></EmptyCart> : null
+               addToCart.length == 0 ? <EmptyCart setToggle={setToggle}></EmptyCart> : null
              }
          </div>
           <div className='mt-5'>

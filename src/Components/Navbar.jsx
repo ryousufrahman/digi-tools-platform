@@ -2,7 +2,7 @@ import React from "react";
 import Cart from '../assets/shoping-cart.png'
 import logo from '../assets/DigiTools.png'
 
-const Navbar = ({addToCart}) => {
+const Navbar = ({addToCart ,setToggle}) => {
   return (
     <>
       <div className="navbar bg-base-100 max-w-[1200px] mx-auto  pt-4">
@@ -21,8 +21,8 @@ const Navbar = ({addToCart}) => {
         </div>
         <div className="navbar-end ">
           <div className="relative">
-            <img src={Cart} alt="" className="pr-4" />
-            <span className={`bg-red-500 px-2 rounded-full text-white  ${addToCart.length==0 ? 'hidden ' : 'absolute -top-6 -right-1'}  `}>{addToCart.length}</span>
+            <img src={Cart} alt="" className="pr-4" onClick={()=>setToggle('cart')} />
+            <span className={`bg-red-500 px-2 rounded-full text-white  ${addToCart.length==0 ? 'hidden ' : 'absolute -top-6 -right-1'}  `} onClick={()=>setToggle('cart')}>{addToCart.length}</span>
           </div>
            <a href="" className="mx-4 hidden md:block">Login</a>
           <a className="btn rounded-full bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)] text-white  hidden md:flex ">Get Started</a>

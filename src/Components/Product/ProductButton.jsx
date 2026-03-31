@@ -34,7 +34,7 @@ const ProductButton = ({toggle , setToggle , fetchPromise ,addToCart , setAddToC
             </div>
             <div className="cart">
                 {
-                    toggle == 'cart' ? <Cart addToCart={addToCart} setAddToCart ={setAddToCart} ></Cart>:null
+                    toggle == 'cart' ? <Cart addToCart={addToCart} setAddToCart ={setAddToCart} setToggle={setToggle} ></Cart>:null
                 }
 
             </div>

@@ -28,7 +28,7 @@ function App() {
   return (
     <> 
     <header className='shadow-sm sticky z-40 top-0 w-full bg-base-100' >
-       <Navbar addToCart={addToCart}></Navbar>
+       <Navbar addToCart={addToCart} setToggle={setToggle}></Navbar>
     </header>
     <main>
       <Hero></Hero>
