@@ -7,7 +7,7 @@ const RenderCartProduct = ({addToCart , setAddToCart}) => {
           <div className='products-selected shadow rounded-2xl p-5 max-w-300 mx-auto '>
             
              {
-                addToCart.map((added , index) => <DisplayCartProduct key={index} added={added} setAddToCart={setAddToCart}></DisplayCartProduct> )
+                addToCart.map((added , index) => <DisplayCartProduct key={index} added={added} setAddToCart={setAddToCart} addToCart ={addToCart}></DisplayCartProduct> )
              }
              
           </div>
