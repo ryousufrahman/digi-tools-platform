@@ -10,7 +10,7 @@ const RenderCartProduct = ({addToCart , setAddToCart}) => {
 
   const handleProceed =()=>{
     setAddToCart([])
-    toast.success('Purchess Successfull')
+    toast.success(' Purchase Successful')
   }
 
     return (
