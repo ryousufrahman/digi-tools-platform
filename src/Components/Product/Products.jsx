@@ -3,11 +3,10 @@ import Options from "./Options";
 import { toast } from "react-toastify";
 
 const Products = ({ product, addToCart, setAddToCart }) => {
-  const [buy, setBuy] = useState(false);
+  const exist = addToCart.find((p) => p.id === product.id);
+ 
   const handlebuy = () => {
-    setBuy(true);
-
-    const exist = addToCart.find((p) => p.id === product.id);
+    
     if (exist) {
       toast.error("This Product Already Exist in the Cart");
     } else {
@@ -52,10 +51,10 @@ const Products = ({ product, addToCart, setAddToCart }) => {
         <div>
           <button
             className={`btn w-full rounded-full transition-all duration-300
-                      hover:-translate-y-1 hover:scale-105 active:scale-95 text-white ${buy ? "bg-green-500 " : "bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)]"} `}
+                      hover:-translate-y-1 hover:scale-105 active:scale-95 text-white ${exist ? "bg-green-500 " : "bg-[linear-gradient(90deg,#4F39F6_0%,#891AF9_83%,#9514FA_100%)]"} `}
             onClick={handlebuy}
           >
-            {buy ? "Added to Cart" : "Buy Now"}
+            {exist ? "Added to Cart" : "Buy Now"}
           </button>
         </div>
       </div>
